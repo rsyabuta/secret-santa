@@ -1,0 +1,10 @@
+Hi <%= @Name %>,
+
+Please buy a gift for your pick on steam. There is a $5 limit.  Once you're done, mark your name on the google doc.
+
+Here is your pick information:
+<% @pick.each do |k, v| %>
+  <%= k %>: <%= v %>
+<% end %>
+
+Have fun!
