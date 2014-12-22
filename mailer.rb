@@ -86,7 +86,7 @@ else
     @Name = sender["Name"]
     @pick = sender["pick"]
     Mail.deliver do
-      from     'rs.yabuta@gmail.com'
+      from     ENV['GMAIL_SMTP_USER']
       to       sender["Email"]
       subject  "RCI Steam Secret Santa Pick"
       body     erb.result
