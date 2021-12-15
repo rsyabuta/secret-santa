@@ -88,7 +88,7 @@ else
     Mail.deliver do
       from     ENV['GMAIL_SMTP_USER']
       to       sender["Email"]
-      subject  "RCI Steam Secret Santa Pick"
+      subject  "RCI Secret Santa Pick"
       body     erb.result
     end
   end
